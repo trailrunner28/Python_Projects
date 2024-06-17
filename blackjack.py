@@ -15,7 +15,7 @@ def calculate_total(hand):
     #Adjust for aces
     for card in hand:
         if card == 'A' and total > 21:
-            total -= 10
+            total -= 10 
         return total
         
 def player_turn(deck, player_hand):
@@ -66,43 +66,3 @@ while True:
     if play_again != 'yes':
         break
 print("Thanks For Playing!")
-
-
-#setup a dictionary of the cards with the key and value
-#setup the list of the deck times four
-
-# BlackJack Plan
-# 13 cards x4 =deck
-# 
-#
-# dealer=
-# player=
-# import random
-#
-# deal two cards
-# dealer shows second card
-# count card value
-#
-# options hit or stay
-#
-# dealer shows second card
-# if dealer is < 17: then
-# dealer always hits
-#
-# if hand is < 11 : then
-#     ace equals 11
-# else:
-#      ace equals 1
-#
-# compare totals
-#
-# if dealer amount = player amount: then
-# push
-# if dealer closer to or equal to 21:
-# you lose
-# if player is closer to or equal to 21:
-# you win
-# if player > 21 : then
-# bust
-# if player has [11,12,13] plus 14: then
-# BLACKJACK!
